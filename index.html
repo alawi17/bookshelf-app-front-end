@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+<main>
+    <section class="input-section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+            <div class="input">
+                <label for="title">Judul</label>
+                <input id="title" type="text" name="title" required>
+            </div>
+            <div class="input">
+                <label for="author">Penulis</label>
+                <input id="author" type="text" name="author" required>
+            </div>
+            <div class="input">
+                <label for="year">Tahun</label>
+                <input id="year" type="number" name="year" required>
+            </div>
+            <div class="input-inline">
+                <label for="inputBookIsComplete">Selesai Dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="bookSubmit" type="submit">Masukkan Buku Ke Rak <span>Belum Selesai Dibaca</span></button>
+        </form>
+    </section>
+
+    <section class="search-section">
+        <h2>Cari Buku (Opsional)</h2>
+        <form id="searchBook">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text">
+            <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+    </section>
+
+    <section class="book-shelf">
+        <h2>Belum Selesai Dibaca</h2>
+
+        <div id="incompleteBookshelfList" class="book-list"></div>
+    </section>
+
+    <section class="book-shelf">
+        <h2>Selesai Dibaca</h2>
+
+        <div id="completeBookshelfList" class="book-list"></div>
+    </section>
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
